@@ -1,0 +1,111 @@
+body{
+  font-family: "Hack";
+  font-size: 16px;
+  text-align: center;
+  margin: -1.37em auto 0 auto;
+  height: 100%;
+  background-color: #FFF8F0;
+  width: 100%;
+}
+
+form{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  .text{
+    margin: 0;
+    padding: 0 0 0 13px;
+    width: 70%;
+    float: left;
+    height: 50px;
+    font-family: "Hack";
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #808080;
+    &::-webkit-placeholder, &::-mo-placeholder, &:-ms-placeholder{
+      padding-left: 10px;
+    }
+  }
+  .submit{
+    margin: 0;
+    padding: 0;
+    width: calc(29.9% - 13px);
+    float: right;
+    height: 52px;
+    border: none;
+    background-color: #72FF5D;
+    font-family: "Hack";
+  }
+
+}
+.text, .submit{
+  display: inline-block;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  color: #808080;
+  h1{
+    background: #2d2d2d;
+    margin-bottom: 0;
+    padding: 1rem 0;
+    height: 80px;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  p{
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #fff;
+  }
+}
+
+.main{
+  max-width: 320px;
+  padding: 9px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#map{
+  width: 250px;
+  height: 250px;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+
+#ico, #temperatura{
+  display: inline-block;
+}
+
+@media screen and (max-width: 545px){
+  .text{
+    width: 58% !important;
+  }
+  .submit{
+    width: calc(41.9% - 13px)!important;
+  }
+}
+
+@media screen and (max-width: 395px){
+  .text{
+    width: 54% !important;
+  }
+  .submit{
+    width: calc(45.9% - 13px) !important;
+  }
+}
+
+
+
+@media screen and (max-width: 350px){
+  .text{
+    width: 49% !important;
+  }
+  .submit{
+    width: calc(50.9% - 13px)!important;
+  }
+}

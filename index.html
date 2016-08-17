@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tu Aplicación del Tiempo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>El Tiempo</h1>
+    <form action="">
+      <input class="text" data-addCity="newCity" type="text" placeholder=" Busca otra ciudad">
+      <input class="submit"  data-searchCity="buttonAdd" type="submit" value="Buscar otra ciudad">
+    </form>
+    <main class="main">
+      <h2 id="messageShow">Geolocalizando tú posición, espera un momento...</h2>
+      <h2 class="trabajando"></h2>
+      <p id="zone"></p>
+      <p id="temperatura"></p>
+      <img id="ico" src"">
+      <p id="humedad"></p>
+      <p id="temp_max"></p>
+      <p id="temp_min"></p>
+      <h2>Tu estás aquí:</h2>
+      <div id="map">
+      </div>
+    </main>
+
+  </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAN_wSSKTDC7AVI2DaX3h-uNHq0oPL26A&callback=initMap"></script>
+</html>
